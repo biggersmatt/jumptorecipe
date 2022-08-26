@@ -1,0 +1,6 @@
+.nav-container {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
