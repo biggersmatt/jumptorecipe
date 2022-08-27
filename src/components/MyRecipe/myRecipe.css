@@ -1,6 +1,41 @@
 .myrecipe-wrapper {
   background-color: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   height: 200px;
   border:1px solid black;
   margin: 10px 5px;
+}
+
+/* Top */
+.myrecipe-top {
+  background-color: pink;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Middle */
+.myrecipe-mid {
+  background-color: teal;
+  display: flex;
+  flex-grow: 1;
+}
+.myrecipe-mid img {
+  width: 80px;
+}
+.myrecipe-mid p {
+  color: white;
+  padding: 5px;
+}
+
+/* Bottom */
+.myrecipe-bottom {
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+}
+.myrecipe-bottom li {
+  margin: 5px;
 }
