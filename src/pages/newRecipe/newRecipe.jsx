@@ -1,8 +1,15 @@
+// Dependencies
+
+
+// Components
+
+
+// CSS
 import './newRecipe.css';
 
 export default function NewRecipe() {
   return (
-    <div className='newrecipe-container'>
+    <div>
       <h1>New Recipe</h1>
     </div>
   )
