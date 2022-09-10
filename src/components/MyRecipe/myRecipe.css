@@ -10,11 +10,12 @@
   margin: 5px 0 0 0;
   padding: 5px;
 }
-/* Top */
+/************** Top **************/
 .myrecipe-top {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  height: 25%;
   border-bottom: 1px solid black;
 }
 .myrecipe-name-short {
@@ -23,26 +24,31 @@
 .myrecipe-name-long {
   font-size: 5vw;
 }
-/* Middle */
+/************** Middle **************/
 .myrecipe-mid {
   display: flex;
-  flex-grow: 1;
+  height: 55%;
   padding: 5px;
 }
 .myrecipe-mid img {
   max-height: 130px;
-  width: 25%;
+  width: 30%;
+  border-radius: 3px;
 }
 .myrecipe-mid p {
-  color: white;
-  padding: 5px;
+  width: 70%;
+  color: var(--white);
+  padding: 5px 0 0 10px;
 }
-/* Bottom */
+/************** Bottom **************/
 .myrecipe-bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 20%;
   border-top: 1px solid black;
 }
 .myrecipe-bottom li {
+  font-size: 5vw;
   margin: 5px;
 }

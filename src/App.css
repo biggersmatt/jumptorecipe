@@ -1,6 +1,7 @@
 :root {
   --orange: rgb(249, 181, 108);
   --blue: rgb(79, 146, 246); 
+  --white: whitesmoke;
 }
 * {
   color: black;

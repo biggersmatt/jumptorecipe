@@ -27,7 +27,7 @@ const myrecipes = [
   },
   {
     name: 'Cardamon & Star Anise Rice',
-    description: 'Basic white rice taken to the next level with just two spices',
+    description: 'Basic white rice taken to the next level with just two spices!',
     categories: ['vegan', 'side', 'asian'],
     time: '20mins',
     notes: {

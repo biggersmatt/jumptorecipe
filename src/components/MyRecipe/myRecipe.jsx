@@ -1,8 +1,25 @@
 // CSS
 import './myRecipe.css';
-import image from './tofu-scramble.jpeg';
+import tofu from './tofu-scramble.jpeg';
+import peanutTofu from './peanut-tofu.jpeg';
+import rice from './rice.jpeg';
 
 export default function MyRecipe(props) {
+
+  
+  const handleImage = () => {
+    const name = props.recipe.name;
+    if(name === 'Tofu Scramble') {
+      return tofu;
+    } else if(name === 'Peanut Tofu') {
+      return peanutTofu;
+    } else {
+      return rice;
+    }
+  }
+  
+  const image = handleImage();
+
   return (
     <div className='myrecipe-wrapper'>
       <div className='myrecipe-top'>
