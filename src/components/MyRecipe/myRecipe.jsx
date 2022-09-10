@@ -6,7 +6,13 @@ export default function MyRecipe(props) {
   return (
     <div className='myrecipe-wrapper'>
       <div className='myrecipe-top'>
-        <h1>{props.recipe.name}</h1>
+        <h1 className={
+          (props.recipe.name.length >= 26) 
+          ? 'myrecipe-name-long' 
+          : 'myrecipe-name-short'
+          }>
+            {props.recipe.name}
+        </h1>
         <h2>{props.recipe.time}</h2>
       </div>
       <div className="myrecipe-mid">

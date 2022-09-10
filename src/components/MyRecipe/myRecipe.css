@@ -17,6 +17,12 @@
   align-items: center;
   border-bottom: 1px solid black;
 }
+.myrecipe-name-short {
+  font-size: 7vw;
+}
+.myrecipe-name-long {
+  font-size: 5vw;
+}
 /* Middle */
 .myrecipe-mid {
   display: flex;
@@ -35,6 +41,7 @@
 .myrecipe-bottom {
   display: flex;
   justify-content: center;
+  border-top: 1px solid black;
 }
 .myrecipe-bottom li {
   margin: 5px;

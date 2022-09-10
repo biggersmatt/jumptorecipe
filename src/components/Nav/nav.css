@@ -1,5 +1,5 @@
 .nav-container {
-  background-color: lightblue;
+  background-color: var(--blue);
   display: flex;
   justify-content: space-around;
   border-bottom: 2px solid black;
