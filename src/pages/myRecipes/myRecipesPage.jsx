@@ -5,7 +5,7 @@ import Select from 'react-select';
 import MyRecipesList from '../../components/MyRecipesList/myRecipesList';
 
 // CSS
-import './myRecipes.css';
+import './myRecipesPage.css';
 
 const options = [
   { value: 'vegan', label: 'Vegan' },
@@ -20,13 +20,11 @@ export default function MyRecipesPage() {
         <h1>My Recipes</h1>
         <p>A collection of recipes you've created</p>
         <div className='myrecipe-category'>
-          <label>Categories</label>
           <Select
-            defaultValue={[options[2], options[3]]}
             isMulti
             name="colors"
             options={options}
-            className="basic-multi-select"
+            className="basic-multi-select test"
             classNamePrefix="select"
           />
         </div>

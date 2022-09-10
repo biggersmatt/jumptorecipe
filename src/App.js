@@ -2,7 +2,7 @@
 import {Route, Routes} from 'react-router-dom';
 
 // Pages
-import MyRecipes from './pages/myRecipes/myRecipes';
+import MyRecipes from './pages/myRecipes/myRecipesPage';
 import Recipe from './pages/recipe/recipe';
 import NewRecipe from './pages/newRecipe/newRecipe';
 

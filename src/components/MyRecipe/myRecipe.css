@@ -1,38 +1,38 @@
 .myrecipe-wrapper {
   background-color: lightblue;
+  background-color: var(--blue);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 200px;
   border:1px solid black;
-  margin: 10px 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+  padding: 5px;
 }
-
 /* Top */
 .myrecipe-top {
-  background-color: pink;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid black;
 }
-
 /* Middle */
 .myrecipe-mid {
-  background-color: teal;
   display: flex;
   flex-grow: 1;
+  padding: 5px;
 }
 .myrecipe-mid img {
-  width: 80px;
+  max-height: 130px;
+  width: 25%;
 }
 .myrecipe-mid p {
   color: white;
   padding: 5px;
 }
-
 /* Bottom */
 .myrecipe-bottom {
-  background-color: yellow;
   display: flex;
   justify-content: center;
 }

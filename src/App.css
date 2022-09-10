@@ -1,9 +1,16 @@
+:root {
+  --orange: rgb(249, 181, 108);
+  --blue: rgb(79, 146, 246); 
+}
 * {
   color: black;
   padding: 0;
   margin: 0;
   text-decoration: none;
   list-style-type: none;
+}
+body {
+  background-color: var(--orange);
 }
 a:hover {
   cursor: pointer;

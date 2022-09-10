@@ -1,0 +1,12 @@
+.myrecipe-container {
+  height: 100%;
+}
+.myrecipe-header {
+  background-color: var(--blue);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+.myrecipe-category {
+  margin: 5px 0 0 0;
+}
