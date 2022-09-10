@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   height: 200px;
-  border:1px solid black;
+  border: 2px solid black;
   border-radius: 3px;
   margin: 5px 0 0 0;
   padding: 5px;
@@ -13,10 +13,13 @@
 /************** Top **************/
 .myrecipe-top {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   height: 25%;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid black;
+}
+.myrecipe-top h1 {
+  flex-grow: 1;
+  padding: 0 0 0 10px
 }
 .myrecipe-name-short {
   font-size: 7vw;
@@ -24,10 +27,14 @@
 .myrecipe-name-long {
   font-size: 5vw;
 }
+.myrecipe-time {
+  font-size: 5vw;
+  padding: 0 10px 0 0;
+}
 /************** Middle **************/
 .myrecipe-mid {
   display: flex;
-  height: 55%;
+  height: 60%;
   padding: 5px;
 }
 .myrecipe-mid img {
@@ -45,8 +52,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20%;
-  border-top: 1px solid black;
+  height: 15%;
+  border-top: 2px solid black;
 }
 .myrecipe-bottom li {
   font-size: 5vw;

@@ -3,7 +3,7 @@
 }
 .myrecipe-header {
   background-color: var(--blue);
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 3px;
   padding: 5px;
 }

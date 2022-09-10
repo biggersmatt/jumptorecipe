@@ -5,7 +5,6 @@ import peanutTofu from './peanut-tofu.jpeg';
 import rice from './rice.jpeg';
 
 export default function MyRecipe(props) {
-
   
   const handleImage = () => {
     const name = props.recipe.name;
@@ -30,7 +29,7 @@ export default function MyRecipe(props) {
           }>
             {props.recipe.name}
         </h1>
-        <h2>{props.recipe.time}</h2>
+        <h2 className='myrecipe-time'>{props.recipe.time}</h2>
       </div>
       <div className="myrecipe-mid">
         <img src={image} alt="tofu-scramble" />
