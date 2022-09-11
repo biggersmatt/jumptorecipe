@@ -1,6 +1,6 @@
 .myrecipe-header {
   background-color: var(--blue);
-  max-width: 800px;
+  max-width: 500px;
   width: 90%;
   border: 2px solid black;
   border-radius: 3px;
@@ -13,7 +13,7 @@
 /*************** iPad Air (820x1180) ****************/
 @media (min-width: 820px) {
   .myrecipe-header {
-    background-color: pink;
+    max-width: 800px;
     padding: 20px;
     margin: 20px 0 0 0;
   }
