@@ -1,25 +1,7 @@
 .myrecipe-container {
-  /* background-color: green; */
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 100%;
   margin: 5px 0 0 0;
-}
-.myrecipe-header {
-  background-color: var(--blue);
-  max-width: 500px;
-  width: 90%;
-  border: 2px solid black;
-  border-radius: 3px;
-  padding: 10px;
-}
-.myrecipe-category {
-  margin: 5px 0 0 0;
-}
-/*************** iPad Air (820x1180) ****************/
-@media (min-width: 820px) {
-  .myrecipe-header {
-    background-color: pink;
-  }
 }
