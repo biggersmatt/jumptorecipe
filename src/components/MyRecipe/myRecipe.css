@@ -1,14 +1,15 @@
 .myrecipe-wrapper {
-  background-color: lightblue;
   background-color: var(--blue);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   height: 200px;
+  max-width: 500px;
+  width: 100%;
   border: 2px solid black;
   border-radius: 3px;
   margin: 5px 0 0 0;
-  padding: 5px;
+  padding: 10px;
 }
 /************** Top **************/
 .myrecipe-top {
@@ -22,13 +23,13 @@
   padding: 0 0 0 10px
 }
 .myrecipe-name-short {
-  font-size: 7vw;
+  font-size: 26px;
 }
 .myrecipe-name-long {
-  font-size: 5vw;
+  font-size: 18px;
 }
 .myrecipe-time {
-  font-size: 5vw;
+  font-size: 18px;
   padding: 0 10px 0 0;
 }
 /************** Middle **************/
@@ -56,6 +57,6 @@
   border-top: 2px solid black;
 }
 .myrecipe-bottom li {
-  font-size: 5vw;
+  font-size: 18px;
   margin: 5px;
 }
