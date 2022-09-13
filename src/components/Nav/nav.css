@@ -12,3 +12,11 @@
     font-size: 25px;
   }
 }
+/*************** iPad Air (820x1180) ****************/
+@media (min-width: 1200px) {
+  .nav-container {
+    background-color: pink;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+  }
+}

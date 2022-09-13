@@ -5,7 +5,7 @@
 
 
 // CSS
-import './newRecipe.css';
+import './newRecipePage.css';
 
 export default function NewRecipe() {
   return (

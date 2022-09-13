@@ -1,5 +1,5 @@
 // Componenets
-import Recipe from '../MyRecipe/myRecipe';
+import Recipe from '../MyRecipeItem/myRecipeItem';
 
 // CSS
 import './myRecipesList.css';

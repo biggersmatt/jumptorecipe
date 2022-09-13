@@ -2,9 +2,9 @@
 import {Route, Routes} from 'react-router-dom';
 
 // Pages
-import MyRecipes from './pages/myRecipes/myRecipesPage';
-import Recipe from './pages/recipe/recipe';
-import NewRecipe from './pages/newRecipe/newRecipe';
+import MyRecipes from './pages/myRecipesPage/myRecipesPage';
+import Recipe from './pages/recipeShowPage/recipeShowPage';
+import NewRecipe from './pages/newRecipePage/newRecipePage';
 
 // Components
 import Nav from './components/Nav/nav';

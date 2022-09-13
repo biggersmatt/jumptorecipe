@@ -1,5 +1,5 @@
 // CSS
-import './myRecipe.css';
+import './myRecipeItem.css';
 import tofu from './tofu-scramble.jpeg';
 import peanutTofu from './peanut-tofu.jpeg';
 import rice from './rice.jpeg';
