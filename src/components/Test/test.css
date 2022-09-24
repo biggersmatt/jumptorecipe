@@ -3,19 +3,43 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   width: 100vw;
 }
 .header-wrapper {
   background-color: lightcoral;
-  width: 95%;
+  width: calc(95% - 34px);
+  border: 2px solid black;
+  padding: 5px;
+  margin-top: 20px;
 }
 .list-wrapper {
-  background-color: orange;
-  width: 95%;
+  /* background-color: orange; */
   display: flex;
   flex-wrap: wrap;
+  width: 95%;
+  /* border: 2px solid black; */
+  padding: 10px 0 ;
 }
 .item-wrapper {
-  background-color: lightblue;
-  flex: 0 0 33.333333%;
+  margin-top: 10px;
+  flex: 0 0 100%;
+}
+.item {
+  background-color: peru;
+  border: 2px solid black;
+  padding: 5px;
+  margin: 2px 10px;
+}
+/*************** iPad ****************/
+@media (min-width: 820px) {
+  .item-wrapper {
+    flex: 0 0 50%;
+  }
+}
+/*************** Desktop ****************/
+@media (min-width: 1200px) {
+  .item-wrapper {
+    flex: 0 0 33.333333%;
+  }
 }

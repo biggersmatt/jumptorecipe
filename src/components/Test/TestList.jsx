@@ -1,11 +1,17 @@
-import TestItem from './TestItem'
+import TestItemWrapper from './TestItemWrapper'
 
 export default function TestList() {
   return (
     <div className='list-wrapper'>
-      <TestItem />
-      <TestItem />
-      <TestItem />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
+      <TestItemWrapper />
     </div>
   )
 }
