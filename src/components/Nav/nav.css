@@ -5,14 +5,14 @@
   border-bottom: 2px solid black;
   padding: 20px;
 }
-/*************** iPad Air (820x1180) ****************/
+/*************** iPad Air ****************/
 @media (min-width: 820px) {
   .nav-container {
     border-bottom: 2px solid black;
     font-size: 25px;
   }
 }
-/*************** iPad Air (820x1180) ****************/
+/*************** Desktop ****************/
 @media (min-width: 1200px) {
   .nav-container {
     background-color: pink;
