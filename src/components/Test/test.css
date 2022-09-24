@@ -1,0 +1,21 @@
+.page-wrapper {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+.header-wrapper {
+  background-color: lightcoral;
+  width: 95%;
+}
+.list-wrapper {
+  background-color: orange;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.item-wrapper {
+  background-color: lightblue;
+  flex: 0 0 33.333333%;
+}

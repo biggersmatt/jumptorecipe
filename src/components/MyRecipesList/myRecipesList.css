@@ -14,3 +14,11 @@
     margin: 20px 0 0 0;
   }
 }
+/*************** Desktop ****************/
+@media (min-width: 1200px) {
+  .myrecipeslist-container {
+    width: calc(90% + 54px);
+    max-width: 100%;
+    margin: 20px 0 0 0;
+  }
+}
