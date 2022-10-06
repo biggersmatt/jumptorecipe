@@ -1,4 +1,4 @@
-export default function TestItem() {
+export default function Item() {
   return (
     <div className="item">
       <div className='item-top'>

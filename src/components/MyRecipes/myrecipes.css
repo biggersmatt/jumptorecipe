@@ -1,5 +1,5 @@
 .page-wrapper {
-  background-color: yellow;
+  background-color: whitesmoke;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,7 @@
   width: 100vw;
 }
 .header-wrapper {
-  background-color: lightcoral;
+  background-color: lightblue;
   width: calc(95% - 34px);
   border: 2px solid black;
   padding: 5px;
@@ -24,7 +24,7 @@
   flex: 0 0 100%;
 }
 .item {
-  background-color: peru;
+  background-color: lightblue;
   display: flex;
   flex-direction: column;
   height: 150px;
