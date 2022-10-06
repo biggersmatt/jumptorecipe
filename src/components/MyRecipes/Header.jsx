@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <div className="header-wrapper border radius padding">
+    <div className="header border radius padding">
       <h1>Header</h1>
     </div>
   )

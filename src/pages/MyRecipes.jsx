@@ -4,7 +4,7 @@ import '../components/MyRecipes/myrecipes.css';
 
 export default function MyRecipes() {
   return (
-    <div className="page-wrapper flex column align-center">
+    <div className="page flex column align-center">
       <Header />
       <List />
     </div>

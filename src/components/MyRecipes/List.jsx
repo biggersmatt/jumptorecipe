@@ -2,7 +2,7 @@ import ItemWrapper from './ItemWrapper'
 
 export default function List() {
   return (
-    <div className='list-wrapper flex wrap'>
+    <div className='list flex wrap'>
       <ItemWrapper />
       <ItemWrapper />
       <ItemWrapper />

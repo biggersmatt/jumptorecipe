@@ -1,14 +1,14 @@
-.page-wrapper {
+.page {
   background-color: var(--white);
   height: 100%;
   width: 100vw;
 }
-.header-wrapper {
+.header {
   background-color: lightblue;
   width: calc(95% - 34px);
   margin-top: 20px;
 }
-.list-wrapper {
+.list {
   width: 95%;
   padding: 10px 0 ;
 }
