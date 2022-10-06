@@ -25,3 +25,42 @@ a:hover {
 .content {
   flex-grow: 1;
 }
+/* Display Flex */
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.justify-center {
+  justify-content: center;
+}
+.space-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
+.flex-grow-1 {
+  flex-grow: 1;
+}
+.flex-grow-2 {
+  flex-grow: 2;
+}
+.flex-grow-3 {
+  flex-grow: 3;
+}
+/* Border */
+.border {
+  border: 2px solid black;
+}
+.radius {
+  border-radius: 5px;
+}
+/* Padding */
+.padding {
+  padding: 5px;
+}
