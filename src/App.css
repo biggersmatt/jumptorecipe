@@ -35,6 +35,9 @@ a:hover {
 .justify-center {
   justify-content: center;
 }
+.flex-end {
+  justify-content: flex-end;
+}
 .space-around {
   justify-content: space-around;
 }
