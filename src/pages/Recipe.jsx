@@ -1,8 +1,8 @@
-import './recipeShowPage.css';
+import '../components/Recipe/recipe.css';
 
 export default function Recipe() {
   return (
-    <div className='recipe-container'>
+    <div>
       <h1>Recipe</h1>
     </div>
   )

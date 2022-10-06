@@ -1,11 +1,4 @@
-// Dependencies
-
-
-// Components
-
-
-// CSS
-import './newRecipePage.css';
+import '../components/NewRecipe/newrecipe.css';
 
 export default function NewRecipe() {
   return (
