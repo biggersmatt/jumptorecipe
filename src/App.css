@@ -63,6 +63,13 @@ a:hover {
 .flex-grow-3 {
   flex-grow: 3;
 }
+/* Width */
+.width-100 {
+  width: 100%;
+}
+.width-90 {
+  width: 90%;
+}
 /* Border */
 .border {
   border: 2px solid black;
@@ -78,12 +85,30 @@ a:hover {
   padding: 0 5px;
 }
 /* Font Sizes */
+.font-3vw {
+  font-size: 3vw;
+}
+.font-4vw {
+  font-size: 4vw;
+}
+.font-5vw {
+  font-size: 5vw;
+}
 .font-8vw {
   font-size: 8vw;
-}/*************** Font Sizes / Desktop ****************/
+}
+/*************** Font Sizes / Desktop ****************/
 @media (min-width: 1200px) {
+  .font-3vw {
+    font-size: 36px;
+  }
+  .font-4vw {
+    font-size: 48px;
+  }
+  .font-5vw {
+    font-size: 60px;
+  }
   .font-8vw {
     font-size: 96px;
   }
-
 }

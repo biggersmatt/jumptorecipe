@@ -1,6 +1,7 @@
-/* .page {
+.page {
   background-color: lightblue;
-} */
+  width: 100vw
+}
 
 /* Recipe */
 .recipe-wrapper {
@@ -10,45 +11,20 @@
   background-color: coral;
   max-width: 1200px;
 }
-.time-wrapper {
-  width: 100%;
-}
-.time-clock {
-  font-size: 4vw;
-}
-.time-number {
-  font-size: 4vw;
-}
-.list-item {
-  font-size: 3vw;
-}
-/* .recipe-name {
-  font-size: 8vw;
-} */
-.item-info {
-  width: 90%;
-  font-size: 5vw;
-}
-.author {
-  width: 100%;
-}
-.author p {
-  font-size: 3vw;
-}
 
 /* Details */
-/* .details-wrapper {
-  background-color: palegreen;
-} */
+.details-wrapper {
+  background-color: gold;
+}
 .details {
-  /* background-color: coral; */
+  background-color: coral;
   flex-direction: column;
 }
 
 /* Ingredients */
-/* .ingredients-wrapper {
+.ingredients-wrapper {
   background-color: yellow;
-} */
+}
 .ingredients {
   background-color: aqua;
 }
@@ -78,24 +54,6 @@
 
 /*************** Desktop ****************/
 @media (min-width: 1200px) {
-  .time-clock {
-    font-size: 48px;
-  }
-  .time-number {
-    font-size: 48px;
-  }
-  /* .recipe-name {
-    font-size: 96px;
-  } */
-  .list-item {
-    font-size: 36px;
-  }
-  .item-info {
-    font-size: 60px;
-  }
-  .author p {
-    font-size: 36px;
-  }
   .details {
     flex-direction: row;
   }
