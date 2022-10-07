@@ -1,24 +1,37 @@
-.page {
+/* .page {
   background-color: lightblue;
-}
+} */
+
+/* Recipe */
 .recipe-wrapper {
   background-color: plum;
 }
 .recipe {
   background-color: coral;
 }
-.details-wrapper {
-  background-color: palegreen;
+.time-wrapper {
+  width: 100%;
 }
+.categories p {
+  padding: 0 5px;
+}
+.author {
+  width: 100%;
+}
+
+/* Details */
+/* .details-wrapper {
+  background-color: palegreen;
+} */
 .details {
-  background-color: coral;
+  /* background-color: coral; */
   flex-direction: column;
 }
 
 /* Ingredients */
-.ingredients-wrapper {
+/* .ingredients-wrapper {
   background-color: yellow;
-}
+} */
 .ingredients {
   background-color: aqua;
 }

@@ -25,6 +25,10 @@ a:hover {
 .content {
   flex-grow: 1;
 }
+/* Testing */
+.white {
+  background-color: #fff;
+}
 /* Display Flex */
 .flex {
   display: flex;
@@ -40,6 +44,9 @@ a:hover {
 }
 .space-around {
   justify-content: space-around;
+}
+.space-between {
+  justify-content: space-between;
 }
 .align-center {
   align-items: center;
@@ -66,4 +73,7 @@ a:hover {
 /* Padding */
 .padding {
   padding: 5px;
+}
+.padding-sides {
+  padding: 0 5px;
 }
