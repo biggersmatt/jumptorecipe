@@ -38,7 +38,7 @@ export default function Recipe() {
           {/* Ingredients Wrapper*/}
           <div className='ingredients-wrapper flex column'>
             {/* Ingredients Container*/}
-            <div className="aqua flex padding">
+            <div className="flex padding">
               {/* Ingredients */}
               <div className='plum flex column align-center flex-grow-1 border'>
                 <div className="white flex justify-center width-100 border-bottom padding-updown">
@@ -60,10 +60,23 @@ export default function Recipe() {
             </div>
           </div>
           {/* Preparations Wrapper*/}
-          <div className='lightblue preparations-wrapper flex column margin-top'>
-            {/* Preparations */}
-            <div className='coral flex-grow-1 border padding'>
-              <p>Preparations</p>
+          <div className='lightblue preparations-wrapper flex column'>
+            {/* Preparations Container */}
+            <div className="flex padding">
+              {/* Preparations */}
+              <div className='aqua flex column align-center flex-grow-1 border'>
+                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                  <h2>Preparations</h2>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding'>
+                  <p className='padding'>1:</p>
+                  <p className='padding'>Press and drain tofu to remove moisture</p>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding'>
+                  <p className='padding'>2:</p>
+                  <p className='padding'>Combine all spices in a separate dish and set aside</p>
+                </div>
+              </div>
             </div>
           </div>
           {/* Instructions Wrapper*/}

@@ -4,12 +4,12 @@
 .details {
   flex-direction: column;
 }
-.preparations-wrapper {
+/* .preparations-wrapper {
   margin-top: 5px;
 }
 .instructions-wrapper {
   margin-top: 5px;
-}
+} */
 /***************** iPad ******************/
 @media (min-width: 820px) {
 
