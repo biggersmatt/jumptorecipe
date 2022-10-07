@@ -1,3 +1,24 @@
-body {
+.page {
   background-color: lightblue;
+}
+.recipe-wrapper {
+  background-color: plum;
+}
+.recipe {
+  background-color: coral;
+}
+.details-wrapper {
+  background-color: palegreen;
+}
+.details {
+  background-color: coral;
+}
+.ingredients {
+  background-color: yellow;
+}
+.preparations {
+  background-color: teal;
+}
+.instructions {
+  background-color: aqua;
 }
