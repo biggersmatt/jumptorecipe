@@ -77,3 +77,13 @@ a:hover {
 .padding-sides {
   padding: 0 5px;
 }
+/* Font Sizes */
+.font-8vw {
+  font-size: 8vw;
+}/*************** Font Sizes / Desktop ****************/
+@media (min-width: 1200px) {
+  .font-8vw {
+    font-size: 96px;
+  }
+
+}

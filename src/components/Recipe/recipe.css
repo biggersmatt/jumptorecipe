@@ -8,6 +8,7 @@
 }
 .recipe {
   background-color: coral;
+  max-width: 1200px;
 }
 .time-wrapper {
   width: 100%;
@@ -21,9 +22,9 @@
 .list-item {
   font-size: 3vw;
 }
-.recipe-name {
+/* .recipe-name {
   font-size: 8vw;
-}
+} */
 .item-info {
   width: 90%;
   font-size: 5vw;
@@ -77,6 +78,24 @@
 
 /*************** Desktop ****************/
 @media (min-width: 1200px) {
+  .time-clock {
+    font-size: 48px;
+  }
+  .time-number {
+    font-size: 48px;
+  }
+  /* .recipe-name {
+    font-size: 96px;
+  } */
+  .list-item {
+    font-size: 36px;
+  }
+  .item-info {
+    font-size: 60px;
+  }
+  .author p {
+    font-size: 36px;
+  }
   .details {
     flex-direction: row;
   }

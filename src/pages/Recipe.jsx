@@ -4,9 +4,9 @@ import '../components/Recipe/recipe.css';
 
 export default function Recipe() {
   return (
-    <div className='page flex column'>
+    <div className='page flex column justify-center align-center'>
       <div className='recipe-wrapper flex padding'>
-        <div className='recipe flex column align-center flex-grow-1 border radius padding'>
+        <div className='recipe flex column align-center border radius padding'>
           <div className='time-wrapper'>
             <div className='flex flex-end'>
               <FontAwesomeIcon icon={faClock} className='time-clock padding-sides' />
@@ -14,7 +14,7 @@ export default function Recipe() {
             </div>
           </div>
           <div className='flex column justify-center align-center padding'>
-            <h1 className='recipe-name'>Tofu Scramble</h1>
+            <h1 className='recipe-name font-8vw'>Tofu Scramble</h1>
             <div className='flex align-center'>
               <p className='list-item padding-sides'>Vegan</p>
               <p className='list-item padding-sides'>|</p>
