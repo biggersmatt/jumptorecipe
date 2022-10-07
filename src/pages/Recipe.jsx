@@ -6,9 +6,9 @@ export default function Recipe() {
   return (
     <div className='lightblue page flex column justify-center align-center'>
       {/* Recipe Wrapper */}
-      <div className='plum flex padding'>
+      <div className='flex padding'>
         {/* Recipe */}
-        <div className='coral recipe flex column align-center border radius padding'>
+        <div className='coral recipe flex column align-center border radius padding shadow'>
           <div className='width-100'>
             <div className='flex flex-end'>
               <FontAwesomeIcon icon={faClock} className='font-4vw padding-sides' />
@@ -38,52 +38,69 @@ export default function Recipe() {
           {/* Ingredients Wrapper*/}
           <div className='ingredients-wrapper flex column'>
             {/* Ingredients Container*/}
-            <div className="flex padding">
+            <div className="flex justify-center padding">
               {/* Ingredients */}
-              <div className='plum flex column align-center flex-grow-1 border'>
+              <div className='plum detail flex column align-center flex-grow-1 border radius shadow'>
                 <div className="white flex justify-center width-100 border-bottom padding-updown">
-                  <h2>Ingredients</h2>
+                  <h2 className='font-4vw'>Ingredients</h2>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding'>
-                  <p className='padding'>16oz</p>
-                  <p className='padding'>Firm Tofu</p>
+                  <p className='font-3vw padding'>16oz</p>
+                  <p className='font-3vw padding'>Firm Tofu</p>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding'>
-                  <p className='padding'>1Tbsp</p>
-                  <p className='padding'>Olive Oil</p>
+                  <p className='font-3vw padding'>1Tbsp</p>
+                  <p className='font-3vw padding'>Olive Oil</p>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding'>
-                  <p className='padding'>2Tbsp</p>
-                  <p className='padding'>Nutrional Yeast</p>
+                  <p className='font-3vw padding'>2Tbsp</p>
+                  <p className='font-3vw padding'>Nutrional Yeast</p>
                 </div>
               </div>
             </div>
           </div>
           {/* Preparations Wrapper*/}
-          <div className='lightblue preparations-wrapper flex column'>
+          <div className='preparations-wrapper flex column'>
             {/* Preparations Container */}
-            <div className="flex padding">
+            <div className="flex justify-center padding">
               {/* Preparations */}
-              <div className='aqua flex column align-center flex-grow-1 border'>
+              <div className='aqua detail flex column align-center flex-grow-1 border radius shadow'>
                 <div className="white flex justify-center width-100 border-bottom padding-updown">
-                  <h2>Preparations</h2>
+                  <h2 className='font-4vw'>Preparations</h2>
                 </div>
-                <div className='white flex width-80 border radius margin-updown padding'>
-                  <p className='padding'>1:</p>
-                  <p className='padding'>Press and drain tofu to remove moisture</p>
+                <div className='white flex width-80 border radius margin-updown padding shadow'>
+                  <p className='font-3vw padding'>1:</p>
+                  <p className='font-3vw padding'>Press and drain tofu to remove moisture</p>
                 </div>
-                <div className='white flex width-80 border radius margin-updown padding'>
-                  <p className='padding'>2:</p>
-                  <p className='padding'>Combine all spices in a separate dish and set aside</p>
+                <div className='white flex width-80 border radius margin-updown padding shadow'>
+                  <p className='font-3vw padding'>2:</p>
+                  <p className='font-3vw padding'>Combine all spices in a separate dish and set aside</p>
                 </div>
               </div>
             </div>
           </div>
           {/* Instructions Wrapper*/}
-          <div className='aqua instructions-wrapper flex column margin-top'>
+          <div className='instructions-wrapper flex column'>
+            {/* Instructions Container */}
+            <div className="flex justify-center padding">
             {/* Instructions */}
-            <div className='gold flex-grow-1 border padding'>
-              <p>Instructions</p>
+            <div className='gold detail flex column align-center flex-grow-1 border radius shadow'>
+                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                  <h2 className='font-4vw'>Instructions</h2>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding shadow'>
+                  <p className='font-3vw padding'>1:</p>
+                  <p className='font-3vw padding'>Add olive oil to a 10in pan on medium heat</p>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding shadow'>
+                  <p className='font-3vw padding'>2:</p>
+                  <p className='font-3vw padding'>Once the pan is hot, add tofu to the pan and cook for 5 minutes turning frequently</p>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding shadow'>
+                  <p className='font-3vw padding'>3:</p>
+                  <p className='font-3vw padding'>Add combined spices from preparations to the tofu and stir. Cook for 5 minutes</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

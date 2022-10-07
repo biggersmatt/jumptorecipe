@@ -29,9 +29,12 @@ a:hover {
   height: 100%;
   width: 100vw;
 }
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Testing */
 .white {
-  background-color: #fff;
+  background-color: whitesmoke;
 }
 .plum {
   background-color: plum;
@@ -129,8 +132,23 @@ a:hover {
 .font-8vw {
   font-size: 8vw;
 }
+/***************** Font Sizes / iPad ******************/
+@media (min-width: 820px) {
+  .font-3vw {
+    font-size: 24.6px;
+  }
+  .font-4vw {
+    font-size: 32.8px;
+  }
+  .font-5vw {
+    font-size: 41px;
+  }
+  .font-8vw {
+    font-size: 65.5px;
+  }
+}
 /*************** Font Sizes / Desktop ****************/
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
   .font-3vw {
     font-size: 36px;
   }
@@ -143,4 +161,4 @@ a:hover {
   .font-8vw {
     font-size: 96px;
   }
-}
+} */
