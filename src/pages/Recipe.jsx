@@ -5,24 +5,24 @@ import '../components/Recipe/recipe.css';
 export default function Recipe() {
   return (
     <div className='page flex column'>
-      <div className='recipe-wrapper flex flex-grow-1 padding'>
+      <div className='recipe-wrapper flex padding'>
         <div className='recipe flex column align-center flex-grow-1 border radius padding'>
           <div className='time-wrapper'>
             <div className='flex flex-end'>
-              <FontAwesomeIcon icon={faClock} className='padding-sides' />
-              <h4 className='padding-sides'>20</h4>
+              <FontAwesomeIcon icon={faClock} className='time-clock padding-sides' />
+              <p className='time-number padding-sides'>20</p>
             </div>
           </div>
-          <div className='flex justify-center align-center flex-grow-1'>
-            <h1>Tofu Scramble</h1>
+          <div className='flex column justify-center align-center padding'>
+            <h1 className='recipe-name'>Tofu Scramble</h1>
+            <div className='flex align-center'>
+              <p className='list-item padding-sides'>Vegan</p>
+              <p className='list-item padding-sides'>|</p>
+              <p className='list-item padding-sides'>Breakfast</p>
+            </div>
           </div>
-          <div className='categories flex align-center flex-grow-1'>
-            <p>Vegan</p>
-            <p>|</p>
-            <p>Breakfast</p>
-          </div>
-          <div className='flex-grow-2'>
-            <p>A high protein alternative to scrambled eggs! With the right spice, this scramble tastes better than traditional egg scrambles.</p>
+          <div className='flex justify-center align-center padding'>
+            <p className='item-info'>A high protein alternative to scrambled eggs! With the right spice, this scramble tastes better than traditional egg scrambles.</p>
           </div>
           <div className='author flex flex-end'>
             <p>- Matt</p>
