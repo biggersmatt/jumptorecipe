@@ -1,52 +1,15 @@
-.page {
-  background-color: lightblue;
-  width: 100vw
-}
-
-/* Recipe */
-.recipe-wrapper {
-  background-color: plum;
-}
 .recipe {
-  background-color: coral;
   max-width: 1200px;
 }
-
-/* Details */
-.details-wrapper {
-  background-color: gold;
-}
 .details {
-  background-color: coral;
   flex-direction: column;
 }
-
-/* Ingredients */
-.ingredients-wrapper {
-  background-color: yellow;
-}
-.ingredients {
-  background-color: aqua;
-}
-
-/* Preparations */
 .preparations-wrapper {
-  background-color: teal;
   margin-top: 5px;
 }
-.preparations {
-  background-color: coral;
-}
-
-/* Instructions */
 .instructions-wrapper {
-  background-color: aqua;
   margin-top: 5px;
 }
-.instructions {
-  background-color: yellow;
-}
-
 /***************** iPad ******************/
 @media (min-width: 820px) {
 

@@ -25,9 +25,28 @@ a:hover {
 .content {
   flex-grow: 1;
 }
+.page {
+  height: 100%;
+  width: 100vw;
+}
 /* Testing */
 .white {
   background-color: #fff;
+}
+.plum {
+  background-color: plum;
+}
+.coral {
+  background-color: coral;
+}
+.aqua {
+  background-color: aqua;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.gold {
+  background-color: gold;
 }
 /* Display Flex */
 .flex {
@@ -70,9 +89,16 @@ a:hover {
 .width-90 {
   width: 90%;
 }
+/* Margin */
+.margin-updown {
+  margin: 5px 0;
+}
 /* Border */
 .border {
   border: 2px solid black;
+}
+.border-bottom {
+  border-bottom: 2px solid black;
 }
 .radius {
   border-radius: 5px;

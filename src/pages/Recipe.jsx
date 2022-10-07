@@ -4,10 +4,11 @@ import '../components/Recipe/recipe.css';
 
 export default function Recipe() {
   return (
-    <div className='page flex column justify-center align-center'>
-      {/* Recipe Information */}
-      <div className='recipe-wrapper flex padding'>
-        <div className='recipe flex column align-center border radius padding'>
+    <div className='lightblue page flex column justify-center align-center'>
+      {/* Recipe Wrapper */}
+      <div className='plum flex padding'>
+        {/* Recipe */}
+        <div className='coral recipe flex column align-center border radius padding'>
           <div className='width-100'>
             <div className='flex flex-end'>
               <FontAwesomeIcon icon={faClock} className='font-4vw padding-sides' />
@@ -30,28 +31,42 @@ export default function Recipe() {
           </div>
         </div>
       </div>
-      {/* Details */}
-      <div className='details-wrapper flex flex-grow-3 width-100'>
-        <div className='details flex flex-grow-1 padding'>
-          {/* Ingredients */}
-          <div className='ingredients-wrapper flex column flex-grow-1 border padding'>
-            <div className='ingredients flex column align-center flex-grow-1 padding-updown'>
-              <h2>Ingredients</h2>
-              <div className='white flex width-90 padding'>
+      {/* Details Wrapper*/}
+      <div className='gold flex flex-grow-3 width-100'>
+        {/* Details */}
+        <div className='coral details flex flex-grow-1 padding'>
+          {/* Ingredients Wrapper*/}
+          <div className='flex column flex-grow-1 border'>
+            {/* Ingredients */}
+            <div className='aqua flex column align-center flex-grow-1'>
+              <div className="white flex justify-center width-100 border-bottom padding-updown">
+                <h2>Ingredients</h2>
+              </div>
+              <div className='white flex width-90 border radius margin-updown padding'>
                 <p className='padding'>16oz</p>
                 <p className='padding'>Firm Tofu</p>
               </div>
+              <div className='white flex width-90 border radius margin-updown padding'>
+                <p className='padding'>1Tbsp</p>
+                <p className='padding'>Olive Oil</p>
+              </div>
+              <div className='white flex width-90 border radius margin-updown padding'>
+                <p className='padding'>2Tbsp</p>
+                <p className='padding'>Nutrional Yeast</p>
+              </div>
             </div>
           </div>
-          {/* Preparations */}
-          <div className='preparations-wrapper flex column flex-grow-1 margin-top border padding'>
-            <div className='preparations flex-grow-1'>
+          {/* Preparations Wrapper*/}
+          <div className='lightblue preparations-wrapper flex column flex-grow-1 margin-top border padding'>
+            {/* Preparations */}
+            <div className='coral flex-grow-1'>
               <p>Preparations</p>
             </div>
           </div>
-          {/* Instructions */}
-          <div className='instructions-wrapper flex column flex-grow-1 margin-top border padding'>
-            <div className='instructions flex-grow-1'>
+          {/* Instructions Wrapper*/}
+          <div className='aqua instructions-wrapper flex column flex-grow-1 margin-top border padding'>
+            {/* Instructions */}
+            <div className='gold flex-grow-1'>
               <p>Instructions</p>
             </div>
           </div>
