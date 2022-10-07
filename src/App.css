@@ -86,6 +86,9 @@ a:hover {
   flex-grow: 3;
 }
 /* Width */
+.width-fit {
+  width: calc(100% - 14px);
+}
 .width-100 {
   width: 100%;
 }
