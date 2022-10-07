@@ -9,15 +9,21 @@ export default function Recipe() {
         </div>
       </div>
       <div className="details-wrapper flex flex-grow-3 padding">
-        <div className='details flex column flex-grow-1'>
-          <div className='ingredients flex-grow-1 border padding'>
-            <p>Ingredients</p>
+        <div className='details flex flex-grow-1'>
+          <div className='ingredients-wrapper flex column flex-grow-1 border padding'>
+            <div className="ingredients flex-grow-1">
+              <p>Ingredients</p>
+            </div>
           </div>
-          <div className='preparations flex-grow-1 border padding'>
-            <p>Preparations</p>
+          <div className='preparations-wrapper flex column flex-grow-1 border padding'>
+            <div className="preparations flex-grow-1">
+              <p>Preparations</p>
+            </div>
           </div>
-          <div className='instructions flex-grow-1 border padding'>
-            <p>Instructions</p>
+          <div className='instructions-wrapper flex column flex-grow-1 margin-top border padding'>
+            <div className="instructions flex-grow-1">
+              <p>Instructions</p>
+            </div>
           </div>
         </div>
       </div>

@@ -12,13 +12,49 @@
 }
 .details {
   background-color: coral;
+  flex-direction: column;
 }
-.ingredients {
+
+/* Ingredients */
+.ingredients-wrapper {
   background-color: yellow;
 }
-.preparations {
+.ingredients {
+  background-color: aqua;
+}
+
+/* Preparations */
+.preparations-wrapper {
   background-color: teal;
+  margin-top: 5px;
+}
+.preparations {
+  background-color: coral;
+}
+
+/* Instructions */
+.instructions-wrapper {
+  background-color: aqua;
+  margin-top: 5px;
 }
 .instructions {
-  background-color: aqua;
+  background-color: yellow;
+}
+
+/***************** iPad ******************/
+@media (min-width: 820px) {
+
+}
+
+/*************** Desktop ****************/
+@media (min-width: 1200px) {
+  .details {
+    flex-direction: row;
+  }
+  .preparations-wrapper {
+    margin-top: 0;
+  }
+  .instructions-wrapper {
+    margin-top: 0;
+  }
 }
