@@ -4,9 +4,9 @@
 .detail {
   max-width: 814px;
 }
-
 .details {
   flex-direction: column;
+  max-width: 1600px;
 }
 /***************** iPad ******************/
 @media (min-width: 820px) {

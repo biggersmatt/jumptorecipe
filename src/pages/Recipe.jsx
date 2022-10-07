@@ -32,7 +32,7 @@ export default function Recipe() {
         </div>
       </div>
       {/* Details Wrapper*/}
-      <div className='flex flex-grow-3 width-100'>
+      <div className='flex justify-center flex-grow-3 width-100'>
         {/* Details */}
         <div className='details flex flex-grow-1'>
           {/* Ingredients Wrapper*/}
