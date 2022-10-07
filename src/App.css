@@ -81,6 +81,9 @@ a:hover {
 .padding {
   padding: 5px;
 }
+.padding-updown {
+  padding: 5px 0;
+}
 .padding-sides {
   padding: 0 5px;
 }

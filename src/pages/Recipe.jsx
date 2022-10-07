@@ -33,16 +33,23 @@ export default function Recipe() {
       {/* Details */}
       <div className='details-wrapper flex flex-grow-3 width-100'>
         <div className='details flex flex-grow-1 padding'>
+          {/* Ingredients */}
           <div className='ingredients-wrapper flex column flex-grow-1 border padding'>
-            <div className='ingredients flex-grow-1'>
-              <p>Ingredients</p>
+            <div className='ingredients flex column align-center flex-grow-1 padding-updown'>
+              <h2>Ingredients</h2>
+              <div className='white flex width-90 padding'>
+                <p className='padding'>16oz</p>
+                <p className='padding'>Firm Tofu</p>
+              </div>
             </div>
           </div>
+          {/* Preparations */}
           <div className='preparations-wrapper flex column flex-grow-1 margin-top border padding'>
             <div className='preparations flex-grow-1'>
               <p>Preparations</p>
             </div>
           </div>
+          {/* Instructions */}
           <div className='instructions-wrapper flex column flex-grow-1 margin-top border padding'>
             <div className='instructions flex-grow-1'>
               <p>Instructions</p>
