@@ -20,10 +20,15 @@
   .details {
     flex-direction: row;
   }
+  .ingredients-wrapper {
+    flex: 0 0 33.333333%;
+  }
   .preparations-wrapper {
     margin-top: 0;
+    flex: 0 0 33.333333%;
   }
   .instructions-wrapper {
     margin-top: 0;
+    flex: 0 0 33.333333%;
   }
 }

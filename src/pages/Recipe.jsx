@@ -32,41 +32,44 @@ export default function Recipe() {
         </div>
       </div>
       {/* Details Wrapper*/}
-      <div className='gold flex flex-grow-3 width-100'>
+      <div className='flex flex-grow-3 width-100'>
         {/* Details */}
-        <div className='coral details flex flex-grow-1 padding'>
+        <div className='details flex flex-grow-1'>
           {/* Ingredients Wrapper*/}
-          <div className='flex column flex-grow-1 border'>
-            {/* Ingredients */}
-            <div className='aqua flex column align-center flex-grow-1'>
-              <div className="white flex justify-center width-100 border-bottom padding-updown">
-                <h2>Ingredients</h2>
-              </div>
-              <div className='white flex width-90 border radius margin-updown padding'>
-                <p className='padding'>16oz</p>
-                <p className='padding'>Firm Tofu</p>
-              </div>
-              <div className='white flex width-90 border radius margin-updown padding'>
-                <p className='padding'>1Tbsp</p>
-                <p className='padding'>Olive Oil</p>
-              </div>
-              <div className='white flex width-90 border radius margin-updown padding'>
-                <p className='padding'>2Tbsp</p>
-                <p className='padding'>Nutrional Yeast</p>
+          <div className='ingredients-wrapper flex column'>
+            {/* Ingredients Container*/}
+            <div className="aqua flex padding">
+              {/* Ingredients */}
+              <div className='plum flex column align-center flex-grow-1 border'>
+                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                  <h2>Ingredients</h2>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding'>
+                  <p className='padding'>16oz</p>
+                  <p className='padding'>Firm Tofu</p>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding'>
+                  <p className='padding'>1Tbsp</p>
+                  <p className='padding'>Olive Oil</p>
+                </div>
+                <div className='white flex width-80 border radius margin-updown padding'>
+                  <p className='padding'>2Tbsp</p>
+                  <p className='padding'>Nutrional Yeast</p>
+                </div>
               </div>
             </div>
           </div>
           {/* Preparations Wrapper*/}
-          <div className='lightblue preparations-wrapper flex column flex-grow-1 margin-top border padding'>
+          <div className='lightblue preparations-wrapper flex column margin-top'>
             {/* Preparations */}
-            <div className='coral flex-grow-1'>
+            <div className='coral flex-grow-1 border padding'>
               <p>Preparations</p>
             </div>
           </div>
           {/* Instructions Wrapper*/}
-          <div className='aqua instructions-wrapper flex column flex-grow-1 margin-top border padding'>
+          <div className='aqua instructions-wrapper flex column margin-top'>
             {/* Instructions */}
-            <div className='gold flex-grow-1'>
+            <div className='gold flex-grow-1 border padding'>
               <p>Instructions</p>
             </div>
           </div>
