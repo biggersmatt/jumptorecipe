@@ -1,36 +1,15 @@
-.header {
-  /* background-color: lightblue; */
-  /* width: calc(95% - 34px);
-  margin-top: 20px; */
-}
-.list {
-  width: 95%;
-  padding: 10px 0 ;
-}
-.item-wrapper {
-  flex: 0 0 100%;
-  margin-top: 10px;
-}
-.item {
-  background-color: lightblue;
-  height: 150px;
-  margin: 2px 10px;
-}
-.description {
-  font-size: 18px;
-}
-.categories p {
-  padding: 0 5px;
+.list-wrapper {
+  width: 100%;
 }
 /*************** iPad ****************/
 @media (min-width: 820px) {
   .item-wrapper {
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 10px);
   }
 }
 /*************** Desktop ****************/
 @media (min-width: 1200px) {
   .item-wrapper {
-    flex: 0 0 33.333333%;
+    flex: 0 0 calc(33.333333% - 10px);
   }
 }
