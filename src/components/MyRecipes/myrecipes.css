@@ -1,15 +1,30 @@
-.list-wrapper {
-  width: 100%;
+.item {
+  height: 200px;
+}
+.item-description {
+  font-size: 18px;
 }
 /*************** iPad ****************/
 @media (min-width: 820px) {
   .item-wrapper {
     flex: 0 0 calc(50% - 10px);
   }
+  .item-description {
+    font-size: 20px;
+  }
+  .item {
+    height: 250px;
+  }
 }
 /*************** Desktop ****************/
 @media (min-width: 1200px) {
   .item-wrapper {
     flex: 0 0 calc(33.333333% - 10px);
+  }
+  .item-description {
+    font-size: 22px;
+  }
+  .item {
+    height: 300px;
   }
 }

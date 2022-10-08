@@ -123,6 +123,9 @@ a:hover {
   padding: 0 5px;
 }
 /* Font Sizes */
+/* .font-2vw {
+  font-size: 2vw;
+} */
 .font-3vw {
   font-size: 3vw;
 }
@@ -137,6 +140,9 @@ a:hover {
 }
 /***************** Font Sizes / iPad ******************/
 @media (min-width: 820px) {
+  .font-2vw {
+    /* font-size: 24.6px; */
+  }
   .font-3vw {
     font-size: 24.6px;
   }
