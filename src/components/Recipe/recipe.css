@@ -9,17 +9,6 @@
   max-width: 1600px;
 }
 
-/* Font Sizes */
-.font-10 {
-  font-size: 100%;
-}
-.font-8 {
-  font-size: 8%;
-}
-.font-6 {
-  font-size: 6%;
-}
-
 /*************** Desktop ****************/
 @media (min-width: 1200px) {
   .details {
