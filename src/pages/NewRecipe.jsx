@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { makeStyles, TextField } from '@material-ui/core';
+import Button from '@mui/material/Button';
 import Select from 'react-select';
 
 // CSS
@@ -12,7 +13,7 @@ const useStyles = makeStyles(() => ({
     display: 'block',
     boxSizing: 'border-box',
     backgroundColor: 'whitesmoke',
-    width: "100%",
+    width: '100%',
     borderRadius: '4px',
     border: '1px solid white',
     padding: '10px 15px',
@@ -21,7 +22,7 @@ const useStyles = makeStyles(() => ({
     fontWeight: 500
   },
   input: {
-    color: "black"
+    color: 'black'
   }
 }));
 
@@ -53,10 +54,10 @@ export default function NewRecipe() {
   return (
     <div className='lightblue page flex column justify-center align-center'>
       {/* Header Wrapper */}
-      <div className="flex justify-center width-100 padding-updown">
+      <div className='flex justify-center width-100 padding-updown'>
         {/* <Header /> */}
-        <div className="plum header flex column align-center border radius width-fit shadow">
-          <h1 className="padding">New Recipe</h1>
+        <div className='plum header flex column align-center border radius width-fit shadow'>
+          <h1 className='padding'>New Recipe</h1>
           <p className='padding'>Create a new recipe to for yourself and others</p>
         </div>
       </div>
@@ -66,23 +67,23 @@ export default function NewRecipe() {
         <div className='coral recipe flex column align-center width-fit border radius shadow'>
           <div className='flex justify-center align-center width-100 padding'>
             {/* Form */}
-            <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center width-100">
+            <form onSubmit={handleSubmit(onSubmit)} className='flex justify-center width-100'>
               {/* Form Wrapper */}
-              <div className='form-wrapper flex space-around width-90'>
+              <div className='flex column space-around width-90'>
                 {/* Form Left */}
                 <div>
                   <div>
-                    <label htmlFor="name">Name</label>
-                    <input type="text" {...register("name")} />
+                    <label htmlFor='name'>Name</label>
+                    <input type='text' {...register('name')} />
                   </div>
                   <div>
-                    <label htmlFor="time">Minutes to cook?</label>
-                    <input type="text" {...register("time")} />
+                    <label htmlFor='time'>Minutes to cook?</label>
+                    <input type='text' {...register('time')} />
                   </div>
                   <div>
-                    <label htmlFor="categories">Categories</label>
+                    <label htmlFor='categories'>Categories</label>
                     <Controller
-                      name="categories"
+                      name='categories'
                       control={control}
                       render={({ field }) => (
                         <Select
@@ -90,9 +91,9 @@ export default function NewRecipe() {
                           isMulti
                           {...field}
                           options={[
-                            { value: "chocolate", label: "Chocolate" },
-                            { value: "strawberry", label: "Strawberry" },
-                            { value: "vanilla", label: "Vanilla" }
+                            { value: 'vegan', label: 'Vegan' },
+                            { value: 'breakfast', label: 'Breakfast' },
+                            { value: 'side', label: 'Side' }
                           ]}
                         />
                       )}
@@ -110,7 +111,19 @@ export default function NewRecipe() {
                     {...register('description')}
                   />
                 </div>
-                <button type="submit" className='margin-updown'>Submit</button>
+                <Button 
+                  type='submit' 
+                  sx={{ 
+                    backgroundColor: 'whitesmoke',
+                    color: 'black',
+                    '&:hover': {
+                      backgroundColor: 'green',
+                      color: 'white',
+                    }
+                  }}
+                >
+                  Submit
+                </Button>
               </div>
             </form>
           </div>
@@ -123,10 +136,10 @@ export default function NewRecipe() {
           {/* Ingredients Wrapper*/}
           <div className='ingredients-wrapper flex column'>
             {/* Ingredients Container*/}
-            <div className="flex justify-center padding">
+            <div className='flex justify-center padding'>
               {/* Ingredients */}
               <div className='plum detail flex column align-center flex-grow-1 border radius shadow'>
-                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                <div className='white flex justify-center width-100 border-bottom padding-updown'>
                   <h2 className='font-4vw'>Ingredients</h2>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding'>
@@ -147,10 +160,10 @@ export default function NewRecipe() {
           {/* Preparations Wrapper*/}
           <div className='preparations-wrapper flex column'>
             {/* Preparations Container */}
-            <div className="flex justify-center padding">
+            <div className='flex justify-center padding'>
               {/* Preparations */}
               <div className='aqua detail flex column align-center flex-grow-1 border radius shadow'>
-                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                <div className='white flex justify-center width-100 border-bottom padding-updown'>
                   <h2 className='font-4vw'>Preparations</h2>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding shadow'>
@@ -167,10 +180,10 @@ export default function NewRecipe() {
           {/* Instructions Wrapper*/}
           <div className='instructions-wrapper flex column'>
             {/* Instructions Container */}
-            <div className="flex justify-center padding">
+            <div className='flex justify-center padding'>
             {/* Instructions */}
             <div className='gold detail flex column align-center flex-grow-1 border radius shadow'>
-                <div className="white flex justify-center width-100 border-bottom padding-updown">
+                <div className='white flex justify-center width-100 border-bottom padding-updown'>
                   <h2 className='font-4vw'>Instructions</h2>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding shadow'>
