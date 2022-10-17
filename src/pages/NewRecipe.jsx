@@ -12,19 +12,22 @@ export default function NewRecipe() {
   const [recipe, setRecipe] = useState({
     name: '',
     time: '',
-    categories: '',
+    categories: [],
   });
 
   const onSubmit = (data) => { 
-    console.log(data.ReactSelect.value)
+    const categories = data.ReactSelect;
+    let newCategories = categories.map(category => {
+      return category.value;
+    })
     setRecipe({
       name: data.name,
       time: data.time,
-      categories: data.ReactSelect.value,
+      categories: newCategories,
     })
   }
 
-  // console.log(recipe);
+  console.log(recipe);
 
   return (
     <div className='lightblue page flex column justify-center align-center'>
@@ -58,6 +61,7 @@ export default function NewRecipe() {
                 render={({ field }) => (
                   <Select
                     isClearable
+                    isMulti
                     {...field}
                     options={[
                       { value: "chocolate", label: "Chocolate" },
