@@ -1,8 +1,9 @@
 // Dependencies
 import React, { useState } from 'react';
-import { useForm, Controller } from 'react-hook-form';
-import { makeStyles, TextField } from '@material-ui/core';
+import { useForm, Controller, useFieldArray } from 'react-hook-form';
+import { makeStyles } from '@material-ui/core';
 import Button from '@mui/material/Button';
+import TextField from '@mui/material/TextField';
 import Select from 'react-select';
 
 // CSS
@@ -29,6 +30,10 @@ const useStyles = makeStyles(() => ({
 export default function NewRecipe() {
   const classes = useStyles();
   const { handleSubmit, register, control } = useForm();
+  const { fields, append, remove } = useFieldArray({
+    control,
+    name: "fieldArray"
+  });
 
   const [recipe, setRecipe] = useState({
     name: '',
@@ -36,8 +41,7 @@ export default function NewRecipe() {
     description: '',
     categories: [],
   });
-
-
+  
   const onSubmit = (data) => { 
     const categories = data.categories;
     let newCategories = categories.map(category => {
@@ -56,7 +60,7 @@ export default function NewRecipe() {
       {/* Header Wrapper */}
       <div className='flex justify-center width-100 padding-updown'>
         {/* <Header /> */}
-        <div className='plum header flex column align-center border radius width-fit shadow'>
+        <div className='coral header flex column align-center border radius width-fit shadow'>
           <h1 className='padding'>New Recipe</h1>
           <p className='padding'>Create a new recipe to for yourself and others</p>
         </div>
@@ -116,13 +120,13 @@ export default function NewRecipe() {
                   sx={{ 
                     backgroundColor: 'whitesmoke',
                     color: 'black',
+                    margin: '10px 0',
                     '&:hover': {
                       backgroundColor: 'green',
                       color: 'white',
                     }
                   }}
-                >
-                  Submit
+                >Submit
                 </Button>
               </div>
             </form>
@@ -139,7 +143,56 @@ export default function NewRecipe() {
             <div className='flex justify-center padding'>
               {/* Ingredients */}
               <div className='plum detail flex column align-center flex-grow-1 border radius shadow'>
-                <div className='white flex justify-center width-100 border-bottom padding-updown'>
+
+
+
+
+              <ul className='flex column width-90 padding-updown'>
+                {fields.map((item, index) => (
+                  <li key={item.id} className='flex'>
+                    <Button onClick={() => remove(index)}>Delete</Button>
+                    <Controller
+                      render={({ field }) => <input {...field} />}
+                      name={`fieldArray.${index}.ingredient`}
+                      control={control}
+                    />
+                  </li>
+                ))}
+              </ul>
+              <Button 
+              onClick={() => append()}
+              sx={{ 
+                backgroundColor: 'whitesmoke',
+                color: 'black',
+                margin: '10px 0',
+                '&:hover': {
+                  backgroundColor: 'green',
+                  color: 'white',
+                }
+              }}
+              >
+                Add an Ingredient
+              </Button>
+              <input type="submit" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <div className='white flex justify-center width-100 border-bottom padding-updown'>
                   <h2 className='font-4vw'>Ingredients</h2>
                 </div>
                 <div className='white flex width-80 border radius margin-updown padding'>
@@ -153,7 +206,7 @@ export default function NewRecipe() {
                 <div className='white flex width-80 border radius margin-updown padding'>
                   <p className='font-3vw padding'>2Tbsp</p>
                   <p className='font-3vw padding'>Nutrional Yeast</p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
