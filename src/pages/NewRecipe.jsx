@@ -1,26 +1,30 @@
 // Dependencies
 import React, { useState } from 'react';
-import { useForm } from 'react-hook-form';
+import { useForm, Controller } from 'react-hook-form';
+import Select from 'react-select';
 
 // CSS
 import '../components/NewRecipe/newrecipe.css';
 
 export default function NewRecipe() {
-  const { handleSubmit, register, formState: { errors } } = useForm();
+  const { handleSubmit, register, control } = useForm();
 
   const [recipe, setRecipe] = useState({
     name: '',
-    description: '',
-    categories: [],
     time: '',
-    ingredients: [],
-    preparations: [],
-    instructions: []
+    categories: '',
   });
 
-  const onSubmit = (data) => {
-    console.log(data)
+  const onSubmit = (data) => { 
+    console.log(data.ReactSelect.value)
+    setRecipe({
+      name: data.name,
+      time: data.time,
+      categories: data.ReactSelect.value,
+    })
   }
+
+  // console.log(recipe);
 
   return (
     <div className='lightblue page flex column justify-center align-center'>
@@ -40,16 +44,30 @@ export default function NewRecipe() {
             <h1 className='font-8vw'>Tofu Scramble</h1>
           </div>
           <div className='flex justify-center align-center padding'>
+            {/* Form */}
             {/* <p className='width-90 font-4vw'>A high protein alternative to scrambled eggs! With the right spice, this scramble tastes better than traditional egg scrambles.</p> */}
             <form onSubmit={handleSubmit(onSubmit)} className="flex column">
-              <input type="text" placeholder='Name' {...register("name")}/>
-              <textarea type="text" placeholder='Description' {...register("description")}/>
-              <input type="text" placeholder='Time to Cook' {...register("time")}/>
-              <select {...register("category", { required: true })}>
-                <option value="">Select...</option>
-                <option value="A">Option A</option>
-                <option value="B">Option B</option>
-              </select>
+              <div>
+                <input type="text" placeholder='Name'{...register("name")} />
+                <input type="text" placeholder='Time'{...register("time")} />
+              </div>
+
+              <Controller
+                name="ReactSelect"
+                control={control}
+                render={({ field }) => (
+                  <Select
+                    isClearable
+                    {...field}
+                    options={[
+                      { value: "chocolate", label: "Chocolate" },
+                      { value: "strawberry", label: "Strawberry" },
+                      { value: "vanilla", label: "Vanilla" }
+                    ]}
+                  />
+                )}
+              />
+
               <button type="submit">Submit</button>
             </form>
           </div>
