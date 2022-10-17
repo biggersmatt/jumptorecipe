@@ -1,33 +1,54 @@
 // Dependencies
 import React, { useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
+import { makeStyles, TextField } from '@material-ui/core';
 import Select from 'react-select';
 
 // CSS
 import '../components/NewRecipe/newrecipe.css';
 
+const useStyles = makeStyles(() => ({
+  textField: {
+    display: 'block',
+    boxSizing: 'border-box',
+    backgroundColor: 'whitesmoke',
+    width: "100%",
+    borderRadius: '4px',
+    border: '1px solid white',
+    padding: '10px 15px',
+    marginBottom: '10px',
+    fontSize: '14px',
+    fontWeight: 500
+  },
+  input: {
+    color: "black"
+  }
+}));
+
 export default function NewRecipe() {
+  const classes = useStyles();
   const { handleSubmit, register, control } = useForm();
 
   const [recipe, setRecipe] = useState({
     name: '',
     time: '',
+    description: '',
     categories: [],
   });
 
+
   const onSubmit = (data) => { 
-    const categories = data.ReactSelect;
+    const categories = data.categories;
     let newCategories = categories.map(category => {
       return category.value;
     })
     setRecipe({
       name: data.name,
       time: data.time,
+      description: data.description,
       categories: newCategories,
     })
   }
-
-  console.log(recipe);
 
   return (
     <div className='lightblue page flex column justify-center align-center'>
@@ -40,39 +61,57 @@ export default function NewRecipe() {
         </div>
       </div>
       {/* Recipe Wrapper */}
-      <div className='flex padding'>
+      <div className='flex justify-center width-100 padding-updown'>
         {/* Recipe */}
-        <div className='coral recipe flex column align-center border radius padding shadow'>
-          <div className='flex column justify-center align-center padding'>
-            <h1 className='font-8vw'>Tofu Scramble</h1>
-          </div>
-          <div className='flex justify-center align-center padding'>
+        <div className='coral recipe flex column align-center width-fit border radius shadow'>
+          <div className='flex justify-center align-center width-100 padding'>
             {/* Form */}
-            {/* <p className='width-90 font-4vw'>A high protein alternative to scrambled eggs! With the right spice, this scramble tastes better than traditional egg scrambles.</p> */}
-            <form onSubmit={handleSubmit(onSubmit)} className="flex column">
-              <div>
-                <input type="text" placeholder='Name'{...register("name")} />
-                <input type="text" placeholder='Time'{...register("time")} />
-              </div>
-
-              <Controller
-                name="ReactSelect"
-                control={control}
-                render={({ field }) => (
-                  <Select
-                    isClearable
-                    isMulti
-                    {...field}
-                    options={[
-                      { value: "chocolate", label: "Chocolate" },
-                      { value: "strawberry", label: "Strawberry" },
-                      { value: "vanilla", label: "Vanilla" }
-                    ]}
+            <form onSubmit={handleSubmit(onSubmit)} className="flex justify-center width-100">
+              {/* Form Wrapper */}
+              <div className='form-wrapper flex space-around width-90'>
+                {/* Form Left */}
+                <div>
+                  <div>
+                    <label htmlFor="name">Name</label>
+                    <input type="text" {...register("name")} />
+                  </div>
+                  <div>
+                    <label htmlFor="time">Minutes to cook?</label>
+                    <input type="text" {...register("time")} />
+                  </div>
+                  <div>
+                    <label htmlFor="categories">Categories</label>
+                    <Controller
+                      name="categories"
+                      control={control}
+                      render={({ field }) => (
+                        <Select
+                          isClearable
+                          isMulti
+                          {...field}
+                          options={[
+                            { value: "chocolate", label: "Chocolate" },
+                            { value: "strawberry", label: "Strawberry" },
+                            { value: "vanilla", label: "Vanilla" }
+                          ]}
+                        />
+                      )}
+                    />
+                  </div>
+                </div>
+                {/* Form Right */}
+                <div>
+                  <label>Description</label>
+                  <TextField 
+                    fullWidth
+                    multiline
+                    className={classes.textField}
+                    InputProps={{className: classes.input}}
+                    {...register('description')}
                   />
-                )}
-              />
-
-              <button type="submit">Submit</button>
+                </div>
+                <button type="submit" className='margin-updown'>Submit</button>
+              </div>
             </form>
           </div>
         </div>
